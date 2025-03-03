@@ -27,7 +27,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex-1 flex flex-col items-center bg-gray-100 justify-center text-center px-4 py-20">
         <h1 className="text-5xl font-bold tracking-tight mb-6">
-          Crie paginas e sites
+          Crie paginas e aplicativos web
           <br />
           sem usar codigo.
         </h1>
