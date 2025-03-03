@@ -35,9 +35,9 @@ export default function Home() {
           Crie sites incriveias com nosso construtor intuitivo de arrastar e
           soltar. Sem necessidade de codigos.
         </p>
-        <Button asChild className="p-1">
+        <Button asChild className="p-4">
           <Link href="/builder" className="flex items-center gap-2">
-            Start Building <ArrowRight className="h-4 w-4" />
+            Vamos começar <ArrowRight className="h-4 w-4" />
           </Link>
         </Button>
       </section>
