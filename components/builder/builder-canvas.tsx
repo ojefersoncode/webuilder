@@ -1,6 +1,6 @@
 "use client";
 
-import { useBuilder, Element } from "./builder-context";
+import { useBuilder } from "./builder-context";
 import { DraggableElement } from "./draggable-element";
 import { DropZone } from "./drop-zone";
 import { ElementProperties } from "./element-properties";
