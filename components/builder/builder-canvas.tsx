@@ -13,9 +13,9 @@ export function BuilderCanvas({ showPreview }: BuilderCanvasProps) {
   const { elements, selectedElement, setSelectedElement } = useBuilder();
 
   return (
-    <div className="flex flex-1 bg-slate-300 overflow-hidden">
+    <div className="flex flex-1 bg-slate-400 overflow-hidden">
       <div
-        className="flex-1 overflow-y-auto bg-muted/30 p-4 max-md:p-2"
+        className="flex-1 overflow-y-auto bg-muted/30 p-6 max-md:p-2"
         onClick={() => !showPreview && setSelectedElement(null)}
       >
         <div
