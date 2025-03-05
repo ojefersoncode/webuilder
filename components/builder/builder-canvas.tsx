@@ -13,28 +13,30 @@ export function BuilderCanvas({ showPreview }: BuilderCanvasProps) {
   const { elements, selectedElement, setSelectedElement } = useBuilder();
 
   return (
-    <div className="flex flex-1 overflow-hidden">
-      <div 
+    <div className="flex flex-1 bg-slate-300 overflow-hidden">
+      <div
         className="flex-1 overflow-y-auto bg-muted/30 p-8"
         onClick={() => !showPreview && setSelectedElement(null)}
       >
-        <div 
-          className={`mx-auto w-full max-w-4xl min-h-[calc(100vh-10rem)] bg-background shadow-md rounded-lg p-8 ${
-            showPreview ? "" : "border-2 border-dashed border-muted-foreground/20"
+        <div
+          className={`mx-auto w-full max-w-5xl min-h-[calc(100vh-10rem)] bg-slate-50 shadow-md rounded-lg p-8 ${
+            showPreview
+              ? ""
+              : "border-2 border-dashed border-muted-foreground/20"
           }`}
         >
           {elements.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-64 text-muted-foreground">
-              <p>Drag elements from the sidebar to start building</p>
+              <p>Arraste e solte os elemntos aqui</p>
             </div>
           ) : (
             <>
               {!showPreview && <DropZone index={0} />}
               {elements.map((element, index) => (
                 <div key={element.id}>
-                  <DraggableElement 
-                    element={element} 
-                    index={index} 
+                  <DraggableElement
+                    element={element}
+                    index={index}
                     isPreview={showPreview}
                   />
                   {!showPreview && <DropZone index={index + 1} />}
@@ -44,9 +46,9 @@ export function BuilderCanvas({ showPreview }: BuilderCanvasProps) {
           )}
         </div>
       </div>
-      
+
       {!showPreview && selectedElement && (
-        <div className="w-80 border-l bg-card overflow-y-auto">
+        <div className="w-80 border-l bg-slate-100 overflow-y-auto">
           <ElementProperties />
         </div>
       )}

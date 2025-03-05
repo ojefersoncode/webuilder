@@ -2,7 +2,15 @@
 
 import { Button } from "@/components/ui/button";
 import { useBuilder } from "./builder-context";
-import { Layers, Eye, EyeOff, Save, Undo, Download, Upload } from "lucide-react";
+import {
+  Layers,
+  Eye,
+  EyeOff,
+  Save,
+  Undo,
+  Download,
+  Upload,
+} from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import Link from "next/link";
 
@@ -11,7 +19,10 @@ interface BuilderHeaderProps {
   setShowPreview: (show: boolean) => void;
 }
 
-export function BuilderHeader({ showPreview, setShowPreview }: BuilderHeaderProps) {
+export function BuilderHeader({
+  showPreview,
+  setShowPreview,
+}: BuilderHeaderProps) {
   const { saveLayout, loadLayout } = useBuilder();
   const { toast } = useToast();
 
@@ -40,23 +51,23 @@ export function BuilderHeader({ showPreview, setShowPreview }: BuilderHeaderProp
   };
 
   return (
-    <header className="border-b bg-card">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <Link href="/" className="flex items-center gap-2">
+    <header className="border-b bg-slate-100">
+      <div className="container mx-auto py-3 flex justify-between items-center">
+        <div className="flex items-center">
+          <Link href="/" className="flex text-slate-900 items-center gap-2">
             <Layers className="h-5 w-5" />
-            <span className="font-bold">DragDrop</span>
+            <span className="font-bold">Webuilder</span>
           </Link>
         </div>
         <div className="flex items-center gap-2">
-          <Button 
-            variant="outline" 
-            size="sm" 
+          <Button
+            variant="outline"
+            size="sm"
             onClick={() => setShowPreview(!showPreview)}
           >
             {showPreview ? (
               <>
-                <EyeOff className="h-4 w-4 mr-2" /> Edit
+                <EyeOff className="h-4 w-4 mr-2" /> Editar
               </>
             ) : (
               <>
@@ -64,14 +75,11 @@ export function BuilderHeader({ showPreview, setShowPreview }: BuilderHeaderProp
               </>
             )}
           </Button>
-          <Button variant="outline" size="sm" onClick={handleLoad}>
-            <Upload className="h-4 w-4 mr-2" /> Load
-          </Button>
           <Button variant="outline" size="sm" onClick={handleSave}>
-            <Save className="h-4 w-4 mr-2" /> Save
+            <Save className="h-4 w-4 mr-2" /> Salvar
           </Button>
-          <Button variant="outline" size="sm" onClick={handleExport}>
-            <Download className="h-4 w-4 mr-2" /> Export
+          <Button variant="outline" size="sm" onClick={handleLoad}>
+            <Upload className="h-4 w-4 mr-2" /> Publicar
           </Button>
         </div>
       </div>

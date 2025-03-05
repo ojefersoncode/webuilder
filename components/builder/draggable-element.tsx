@@ -132,17 +132,17 @@ export function DraggableElement({ element, index, isPreview }: DraggableElement
         </div>
       </div>
       
-      <div className="absolute -right-10 top-0 bottom-0 flex items-center opacity-0 group-hover:opacity-100">
+      <div className="absolute -right-10 top-0 bottom-0 flex items-center p-3 opacity-0 group-hover:opacity-100">
         <Button
           variant="ghost"
           size="icon"
-          className="h-8 w-8 text-destructive"
+          className="h-8 w-8 bg-slate-200 hover:bg-slate-200"
           onClick={(e) => {
             e.stopPropagation();
             removeElement(element.id);
           }}
         >
-          <Trash2 className="h-4 w-4" />
+          <Trash2 className="h-4 w-4 text-red-700" />
         </Button>
       </div>
       

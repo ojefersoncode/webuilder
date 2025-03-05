@@ -28,14 +28,14 @@ export function BuilderSidebar() {
   ];
 
   return (
-    <div className="w-64 border-r bg-card overflow-y-auto">
+    <div className="w-64 border-r bg-slate-100 overflow-y-auto">
       <div className="p-4">
         <h2 className="font-semibold mb-4 flex items-center">
-          <Type className="h-4 w-4 mr-2" /> Elements
+          <Type className="h-4 w-4 mr-2" /> Elementos
         </h2>
         <Tabs defaultValue="elements">
           <TabsList className="w-full mb-4">
-            <TabsTrigger value="elements" className="flex-1">Elements</TabsTrigger>
+            <TabsTrigger value="elements" className="flex-1">Elementos</TabsTrigger>
             <TabsTrigger value="templates" className="flex-1">Templates</TabsTrigger>
           </TabsList>
           <TabsContent value="elements" className="space-y-2">
@@ -64,7 +64,7 @@ export function BuilderSidebar() {
               }}
             >
               <LayoutGrid className="h-4 w-4 mr-2" />
-              Basic Page
+              Pagina basica
             </Button>
             <Button
               variant="outline"
@@ -78,7 +78,7 @@ export function BuilderSidebar() {
               }}
             >
               <LayoutGrid className="h-4 w-4 mr-2" />
-              Contact Page
+              Pagina de contato
             </Button>
           </TabsContent>
         </Tabs>
