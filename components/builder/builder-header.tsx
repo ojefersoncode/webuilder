@@ -7,8 +7,6 @@ import {
   Eye,
   EyeOff,
   Save,
-  Undo,
-  Download,
   Upload,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
@@ -53,7 +51,7 @@ export function BuilderHeader({
   return (
     <header className="border-b bg-slate-100">
       <div className="container mx-auto py-3 flex justify-between items-center">
-        <div className="flex items-center">
+        <div className="flex items-center px-2">
           <Link href="/" className="flex text-slate-900 items-center gap-2">
             <Layers className="h-5 w-5" />
             <span className="font-bold">Webuilder</span>

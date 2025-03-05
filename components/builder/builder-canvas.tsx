@@ -48,7 +48,7 @@ export function BuilderCanvas({ showPreview }: BuilderCanvasProps) {
       </div>
 
       {!showPreview && selectedElement && (
-        <div className="w-80 border-l bg-slate-100 overflow-y-auto">
+        <div>
           <ElementProperties />
         </div>
       )}

@@ -136,7 +136,7 @@ export function DraggableElement({ element, index, isPreview }: DraggableElement
         <Button
           variant="ghost"
           size="icon"
-          className="h-8 w-8 bg-slate-200 hover:bg-slate-200"
+          className="h-8 w-8"
           onClick={(e) => {
             e.stopPropagation();
             removeElement(element.id);
