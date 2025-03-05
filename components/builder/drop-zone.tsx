@@ -31,7 +31,7 @@ export function DropZone({ index }: DropZoneProps) {
   return (
     <div
       ref={drop}
-      className={`h-2 w-full my-1 transition-all ${
+      className={`h-2 w-full mx-2 my-1 transition-all ${
         isOver ? "bg-primary/20" : "bg-transparent"
       }`}
     />

@@ -15,11 +15,11 @@ export function BuilderCanvas({ showPreview }: BuilderCanvasProps) {
   return (
     <div className="flex flex-1 bg-slate-300 overflow-hidden">
       <div
-        className="flex-1 overflow-y-auto bg-muted/30 p-8"
+        className="flex-1 overflow-y-auto bg-muted/30 p-4 max-md:p-2"
         onClick={() => !showPreview && setSelectedElement(null)}
       >
         <div
-          className={`mx-auto w-full max-w-5xl min-h-[calc(100vh-10rem)] bg-slate-50 shadow-md rounded-lg p-8 ${
+          className={`mx-auto w-full min-h-[calc(100vh-10rem)] bg-slate-50 shadow-md rounded-lg p-4 ${
             showPreview
               ? ""
               : "border-2 border-dashed border-muted-foreground/20"
