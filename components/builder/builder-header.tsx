@@ -60,7 +60,7 @@ export function BuilderHeader({
         <div className="flex items-center gap-2 px-2">
           <Button
             variant="outline"
-            size="xs"
+            size="sm"
             onClick={() => setShowPreview(!showPreview)}
           >
             {showPreview ? (
@@ -73,10 +73,10 @@ export function BuilderHeader({
               </>
             )}
           </Button>
-          <Button variant="outline" size="xs" onClick={handleSave}>
+          <Button variant="outline" size="sm" onClick={handleSave}>
             <Save className="h-4 w-4 mr-2" /> Salvar
           </Button>
-          <Button variant="outline" size="xs" onClick={handleLoad}>
+          <Button variant="outline" size="sm" onClick={handleLoad}>
             <Upload className="h-4 w-4 mr-2" /> Publicar
           </Button>
         </div>
