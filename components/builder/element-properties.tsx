@@ -35,7 +35,7 @@ export function ElementProperties() {
           Editar Elemento
         </DialogTrigger>
         <DialogContent>
-          <h3 className="font-semibold mb-4">Editar Propriedades</h3>
+          <h3 className="font-semibold mb-4">Editar</h3>
           <Tabs defaultValue="content">
             <TabsList className="w-full mb-4">
               <TabsTrigger value="content" className="flex-1">
