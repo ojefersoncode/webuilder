@@ -48,9 +48,9 @@ export function BuilderCanvas({ showPreview }: BuilderCanvasProps) {
       </div>
 
       {!showPreview && selectedElement && (
-        <div>
+        
           <ElementProperties />
-        </div>
+    
       )}
     </div>
   );
