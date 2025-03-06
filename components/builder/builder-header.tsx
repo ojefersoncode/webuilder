@@ -57,7 +57,7 @@ export function BuilderHeader({
             <span className="font-bold">Webuilder</span>
           </Link>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 px-2">
           <Button
             variant="outline"
             size="sm"
