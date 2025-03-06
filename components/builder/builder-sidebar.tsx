@@ -54,7 +54,7 @@ export function BuilderSidebar() {
           <TabsContent value="templates" className="space-y-2">
             <Button
               variant="outline"
-              className="w-full justify-start"
+              className="px-4 py-2 justify-start"
               onClick={() => {
                 // Add a pre-designed template
                 addElement("heading");
@@ -68,7 +68,7 @@ export function BuilderSidebar() {
             </Button>
             <Button
               variant="outline"
-              className="w-full justify-start"
+              className="px-4 py-2 justify-start"
               onClick={() => {
                 // Add a contact template
                 addElement("heading");
