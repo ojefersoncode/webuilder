@@ -32,7 +32,7 @@ export function ElementProperties() {
     <div className="fixed bottom-4 right-4 ">
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger className="w-full py-2 px-4 bg-blue-500 text-white text-center rounded-md">
-          Editar Elemento
+          Editar
         </DialogTrigger>
         <DialogContent>
           <h3 className="font-semibold mb-4">Editar</h3>
