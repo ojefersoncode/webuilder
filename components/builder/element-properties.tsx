@@ -29,7 +29,7 @@ export function ElementProperties() {
   };
 
   return (
-    <div className="fixed bottom-0 right-0 p-4 shadow-md border-t">
+    <div className="fixed bottom-0 right-0 ">
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger className="w-full py-2 px-4 bg-blue-500 text-white text-center rounded-md">
           Editar Elemento
